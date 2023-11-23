@@ -1,6 +1,7 @@
 <?php
 
-use App\Livewire\Welcome;
+use App\Livewire\Counter;
+use App\Livewire\Sample;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/cunter', Counter::class);
+
+Route::get('/sample', sample::class);
 
